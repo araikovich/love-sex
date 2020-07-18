@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="araikovich.inc.lovesex">
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/love_sex_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/love_sex_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.splash_screen.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.sex_missions_detail.SexMissionsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.dirty_scene_detail.DirtySceneDetailActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

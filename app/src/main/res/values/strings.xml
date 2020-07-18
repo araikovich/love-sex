@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Love Sex</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Кама рулетка</string>
+    <string name="menu_gallery">Грязные сценки</string>
+    <string name="menu_slideshow">Секс задания</string>
+    <string name="btn_sex_positions_start">Страсть</string>
+    <string name="sex_positions_title">Кама рулетка</string>
+    <string name="dirty_scenes_title">Грязные сценки</string>
+    <string name="sex_missions_title">Ceкс задания</string>
+    <string name="sex_mission_pack_newbie_title">Для новичков</string>
+    <string name="sex_mission_pack_newbie_description">позиция требует\nакробатических\nспособностей!</string>
+    <string name="sex_mission_pack_advanced_title">Для опытных</string>
+    <string name="sex_mission_pack_advanced_description">позиция требует\nакробатических\nспособностей!</string>
+    <string name="sex_mission_pack_extreme_title">Для экстрима</string>
+    <string name="sex_mission_pack_extreme_description">позиция требует\nакробатических\nспособностей!</string>
+    <string name="sex_missions_tab_newbie_title">Новичок</string>
+    <string name="sex_missions_tab_advanced_title">Опытный</string>
+    <string name="sex_missions_tab_extreme_title">Экстримал</string>
+    <string name="sex_missions_detail_title">Задания</string>
+    <string name="sex_position_purchase_offer_title">Разблокируйте\nодну карту бесплатно</string>
+    <string name="sex_position_purchase_offer_items_in_pack">39 карточек</string>
+    <string name="sex_position_purchase_offer_description">Добавьте пикантности вашему сексу благодаря необычным и более захватывающим позам. Эта версия идеально подойдет для празднования оперделенной даты. Не волнуйтесь! Приложение точно подскажет, что делать</string>
+    <string name="dirty_scene_school">Учитель\nи двоечница</string>
+    <string name="dirty_scene_police">Вы\nарестованы</string>
+    <string name="dirty_scene_nurse">Случай\nв больнице</string>
+    <string name="dirty_scene_first_date">Первое\nсвидание</string>
+    <string name="dirty_scene_airplane">Страсть\nв воздухе</string>
+    <string name="dirty_scene_maid">Плохая\nдомохозяйка</string>
+    <string name="dirty_scene_office">Начальница\nи подчиненный</string>
+    <string name="dirty_scene_robber">Это\nограбление!</string>
+
+    <string name="dirty_scene_detail_title_school">Учитель и двоечница</string>
+    <string name="dirty_scene_detail_title_police">Вы арестованы</string>
+    <string name="dirty_scene_detail_title_nurse">Случай в больнице</string>
+    <string name="dirty_scene_detail_title_first_date">Первое свидание</string>
+    <string name="dirty_scene_detail_title_airplane">Страсть в воздухе</string>
+    <string name="dirty_scene_detail_title_maid">Плохая домохозяйка</string>
+    <string name="dirty_scene_detail_title_office">Начальница и подчиненный</string>
+    <string name="dirty_scene_detail_title_robber">Это ограбление!</string>
+
+    <string name="dirty_scene_detail_description_school">Позиция требует акробатических способностей!\n\nЖенщина садится на край стола, мужчина встает напротив нее и чуть сгибает ноги, чтобы находиться в положении, наиболее удобном для проникновения.\n\nПотом женщина обнимает мужчину руками за шею и закидывает ноги ему на плечи. Затем она отклоняется назад, а тебе остается двигаться по привычной схеме, держа ее за зад.</string>
+    <string name="dirty_scene_detail_description_police">Позиция требует акробатических способностей!\n\nЖенщина садится на край стола, мужчина встает напротив нее и чуть сгибает ноги, чтобы находиться в положении, наиболее удобном для проникновения.\n\nПотом женщина обнимает мужчину руками за шею и закидывает ноги ему на плечи. Затем она отклоняется назад, а тебе остается двигаться по привычной схеме, держа ее за зад.</string>
+    <string name="dirty_scene_detail_description_nurse">Позиция требует акробатических способностей!\n\nЖенщина садится на край стола, мужчина встает напротив нее и чуть сгибает ноги, чтобы находиться в положении, наиболее удобном для проникновения.\n\nПотом женщина обнимает мужчину руками за шею и закидывает ноги ему на плечи. Затем она отклоняется назад, а тебе остается двигаться по привычной схеме, держа ее за зад.</string>
+    <string name="dirty_scene_detail_description_first_date">Позиция требует акробатических способностей!\n\nЖенщина садится на край стола, мужчина встает напротив нее и чуть сгибает ноги, чтобы находиться в положении, наиболее удобном для проникновения.\n\nПотом женщина обнимает мужчину руками за шею и закидывает ноги ему на плечи. Затем она отклоняется назад, а тебе остается двигаться по привычной схеме, держа ее за зад.</string>
+    <string name="dirty_scene_detail_description_airplane">Позиция требует акробатических способностей!\n\nЖенщина садится на край стола, мужчина встает напротив нее и чуть сгибает ноги, чтобы находиться в положении, наиболее удобном для проникновения.\n\nПотом женщина обнимает мужчину руками за шею и закидывает ноги ему на плечи. Затем она отклоняется назад, а тебе остается двигаться по привычной схеме, держа ее за зад.</string>
+    <string name="dirty_scene_detail_description_maid">Позиция требует акробатических способностей!\n\nЖенщина садится на край стола, мужчина встает напротив нее и чуть сгибает ноги, чтобы находиться в положении, наиболее удобном для проникновения.\n\nПотом женщина обнимает мужчину руками за шею и закидывает ноги ему на плечи. Затем она отклоняется назад, а тебе остается двигаться по привычной схеме, держа ее за зад.</string>
+    <string name="dirty_scene_detail_description_office">Позиция требует акробатических способностей!\n\nЖенщина садится на край стола, мужчина встает напротив нее и чуть сгибает ноги, чтобы находиться в положении, наиболее удобном для проникновения.\n\nПотом женщина обнимает мужчину руками за шею и закидывает ноги ему на плечи. Затем она отклоняется назад, а тебе остается двигаться по привычной схеме, держа ее за зад.</string>
+    <string name="dirty_scene_detail_description_robber">Позиция требует акробатических способностей!\n\nЖенщина садится на край стола, мужчина встает напротив нее и чуть сгибает ноги, чтобы находиться в положении, наиболее удобном для проникновения.\n\nПотом женщина обнимает мужчину руками за шею и закидывает ноги ему на плечи. Затем она отклоняется назад, а тебе остается двигаться по привычной схеме, держа ее за зад.</string>
+
+    <string name="dirty_scene_description_title">Описание</string>
+    <string name="dirty_scene_airplane_description">Позиция требует акробатических способностей!\n\nЖенщина садится на край стола, мужчина встает напротив нее и чуть сгибает ноги, чтобы находиться в положении, наиболее удобном для проникновения.\n\nПотом женщина обнимает мужчину руками за шею и закидывает ноги ему на плечи. Затем она отклоняется назад, а тебе остается двигаться по привычной схеме, держа ее за зад.</string>
+
+</resources>
