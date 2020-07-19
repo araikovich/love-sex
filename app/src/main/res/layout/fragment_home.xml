@@ -24,8 +24,6 @@
             android:layout_height="469dp"
             android:layout_marginTop="106dp"
             android:clipToPadding="false"
-            android:paddingStart="49dp"
-            android:paddingEnd="49dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

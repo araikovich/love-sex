@@ -10,196 +10,235 @@ class SexPositionCardsProvider {
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                false,
                 false
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                false,
                 false
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                false,
                 false
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                false,
                 false
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                false,
                 false
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                false,
                 false
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                false,
                 false
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                false,
                 false
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                false,
                 false
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                false,
                 false
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                false,
                 false
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                false,
                 false
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                false,
                 false
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             ),
             SexPositionsCardModel(
                 0,
                 R.drawable.sex_pos_1,
+                true,
                 true
             )
         )

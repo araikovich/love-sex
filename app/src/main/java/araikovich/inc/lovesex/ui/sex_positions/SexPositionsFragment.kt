@@ -10,18 +10,23 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
+import androidx.recyclerview.widget.RecyclerView
 import araikovich.inc.lovesex.R
 import araikovich.inc.lovesex.databinding.FragmentHomeBinding
+import araikovich.inc.lovesex.ui.sex_positions.dialog.AdsSexPositionDialog
 import araikovich.inc.lovesex.ui.sex_positions.dialog.PurchaseSexPositionsPackDialog
 import araikovich.inc.lovesex.ui.sex_positions.model.SexPositionsCardModel
-import araikovich.inc.lovesex.ui.utils.HorizontalItemsMarginItemDecorator
-import araikovich.inc.lovesex.ui.utils.dpToPx
-import araikovich.inc.lovesex.ui.utils.screenSize
-import araikovich.inc.lovesex.ui.utils.setOnClickWithTouchImpact
+import araikovich.inc.lovesex.ui.utils.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import upgames.pokerup.android.presentation.viewmodel.ActionState
 
 class SexPositionsFragment : Fragment() {
+
+    companion object {
+
+        private const val PURCHASE_SEX_POSItiONS_DIALOG_TAG = "PURCHASE_SEX_POSItiONS_DIALOG_TAG"
+        private const val ADS_SEX_POSITIONS_TAG = "ADS_SEX_POSITIONS_TAG"
+    }
 
     private lateinit var binding: FragmentHomeBinding
 
@@ -45,6 +50,9 @@ class SexPositionsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         sexPositionsViewModel.getSexPositions()
+        binding.root.postDelayed({
+            showPurchaseDialog()
+        }, 500)
     }
 
     private fun observeSexPositions() {
@@ -69,6 +77,22 @@ class SexPositionsFragment : Fragment() {
             )
         )
         PagerSnapHelper().attachToRecyclerView(binding.rvItems)
+        binding.rvItems.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+
+            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                super.onScrolled(recyclerView, dx, dy)
+                loopUnlimitedRecyclerView()
+            }
+        })
+    }
+
+    private fun loopUnlimitedRecyclerView() {
+        val currentItemPosition =
+            (binding.rvItems.layoutManager as LinearLayoutManager).findLastVisibleItemPosition()
+        if (currentItemPosition == sexPositionsCardsAdapter?.itemsList?.size.orZero() - 10) {
+            sexPositionsCardsAdapter?.itemsList?.addAll(sexPositionsCardsAdapter?.itemsList.orEmpty())
+            sexPositionsCardsAdapter?.notifyDataSetChanged()
+        }
     }
 
     private fun updateAdapter(items: List<SexPositionsCardModel>) {
@@ -76,21 +100,53 @@ class SexPositionsFragment : Fragment() {
             itemsList.clear()
             itemsList.addAll(items)
             notifyDataSetChanged()
+            binding.rvItems.scrollToPosition(2)
+        }
+    }
+
+    private fun addItemsIfNeed(nextItemPosition: Int) {
+        if (sexPositionsCardsAdapter?.itemsList?.size.orZero() < nextItemPosition + 2) {
+            sexPositionsCardsAdapter?.itemsList?.addAll(sexPositionsCardsAdapter?.itemsList.orEmpty())
+            sexPositionsCardsAdapter?.notifyDataSetChanged()
         }
     }
 
     private fun setupListeners() {
         binding.btnStart.setOnClickWithTouchImpact {
+            val currentPosition =
+                (binding.rvItems.layoutManager as LinearLayoutManager).findLastVisibleItemPosition()
+            var nextItem = currentPosition + 20
+            addItemsIfNeed(nextItem)
+            while (sexPositionsCardsAdapter?.itemsList?.get(nextItem)?.isLocked.orFalse()) {
+                nextItem++
+                addItemsIfNeed(nextItem)
+            }
             binding.rvItems.smoothScrollBy(
-                requireActivity().screenSize().width * 20 + 67.dpToPx(),
+                requireActivity().screenSize().width * (nextItem - currentPosition),
                 0,
                 DecelerateInterpolator(),
-                2000
+                5000
             )
         }
+
         binding.ivFullPack.setOnClickWithTouchImpact {
-            val dialog = PurchaseSexPositionsPackDialog()
-            childFragmentManager.beginTransaction().add(dialog, "TAG").commitAllowingStateLoss()
+            showPurchaseDialog()
         }
+    }
+
+    private fun showPurchaseDialog() {
+        val dialog = PurchaseSexPositionsPackDialog()
+        dialog.onCloseCallback = {
+            binding.root.postDelayed({ showAdsDialog() }, 500)
+        }
+        childFragmentManager.beginTransaction().add(dialog, PURCHASE_SEX_POSItiONS_DIALOG_TAG)
+            .commitAllowingStateLoss()
+    }
+
+    private fun showAdsDialog() {
+        val dialog = AdsSexPositionDialog()
+        dialog.onCloseCallback = {}
+        childFragmentManager.beginTransaction().add(dialog, ADS_SEX_POSITIONS_TAG)
+            .commitAllowingStateLoss()
     }
 }
