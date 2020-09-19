@@ -12,10 +12,13 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.DialogFragment
 import araikovich.inc.lovesex.R
 import araikovich.inc.lovesex.databinding.DialogPurchaseSexPositionsPackBinding
+import araikovich.inc.lovesex.ui.utils.setOnClickWithTouchImpact
 
 class PurchaseSexPositionsPackDialog : DialogFragment() {
 
     private lateinit var binding: DialogPurchaseSexPositionsPackBinding
+
+    var onCloseCallback: (() -> Unit)? = null
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val dialog = super.onCreateDialog(savedInstanceState)
@@ -40,6 +43,14 @@ class PurchaseSexPositionsPackDialog : DialogFragment() {
     ): View? {
         val view = inflater.inflate(R.layout.dialog_purchase_sex_positions_pack, container, false)
         binding = DataBindingUtil.bind(view)!!
+        setupListeners()
         return view
+    }
+
+    private fun setupListeners() {
+        binding.icClose.setOnClickWithTouchImpact {
+            dismiss()
+            onCloseCallback?.invoke()
+        }
     }
 }

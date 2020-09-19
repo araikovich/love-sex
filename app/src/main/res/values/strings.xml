@@ -24,8 +24,11 @@
     <string name="sex_missions_tab_advanced_title">Опытный</string>
     <string name="sex_missions_tab_extreme_title">Экстримал</string>
     <string name="sex_missions_detail_title">Задания</string>
-    <string name="sex_position_purchase_offer_title">Разблокируйте\nодну карту бесплатно</string>
+    <string name="sex_position_purchase_offer_title">Разблокируйте\nвсе карты</string>
+    <string name="sex_position_ads_offer_title">Разблокируйте\nодну карту бесплатно</string>
     <string name="sex_position_purchase_offer_items_in_pack">39 карточек</string>
+    <string name="sex_position_ads_offer_items_in_pack">1 случайная карта</string>
+    <string name="sex_position_ads_offer_btn_free">БЕСПЛАТНО</string>
     <string name="sex_position_purchase_offer_description">Добавьте пикантности вашему сексу благодаря необычным и более захватывающим позам. Эта версия идеально подойдет для празднования оперделенной даты. Не волнуйтесь! Приложение точно подскажет, что делать</string>
     <string name="dirty_scene_school">Учитель\nи двоечница</string>
     <string name="dirty_scene_police">Вы\nарестованы</string>
