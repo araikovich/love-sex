@@ -26,6 +26,12 @@ class PositionsAdapter(private val context: Context) : RecyclerView.Adapter<Posi
     override fun onBindViewHolder(holder: PositionViewHolder, position: Int) {
         holder.bindView(itemsList[position])
     }
+
+    fun updateItems(newList: List<SexPositionsCardModel>) {
+        val lastItem = itemsList.lastIndex
+        itemsList.addAll(newList)
+        notifyItemRangeInserted(lastItem, itemsList.size)
+    }
 }
 
 class PositionViewHolder(view: View) : RecyclerView.ViewHolder(view) {

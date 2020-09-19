@@ -69,14 +69,11 @@ class SexPositionsFragment : Fragment() {
         }
         binding.rvItems.itemAnimator = null
         binding.rvItems.layoutManager =
-            LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            CenterZoomLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        binding.rvItems.addItemDecoration(OffsetItemDecoration(requireContext()))
         binding.rvItems.adapter = sexPositionsCardsAdapter
-        binding.rvItems.addItemDecoration(
-            HorizontalItemsMarginItemDecorator(
-                18.dpToPx()
-            )
-        )
         PagerSnapHelper().attachToRecyclerView(binding.rvItems)
+        binding.rvItems.setItemViewCacheSize(20)
         binding.rvItems.addOnScrollListener(object : RecyclerView.OnScrollListener() {
 
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
@@ -96,42 +93,39 @@ class SexPositionsFragment : Fragment() {
     }
 
     private fun updateAdapter(items: List<SexPositionsCardModel>) {
-        sexPositionsCardsAdapter?.apply {
-            itemsList.clear()
-            itemsList.addAll(items)
-            notifyDataSetChanged()
-            binding.rvItems.scrollToPosition(2)
-        }
+        sexPositionsCardsAdapter?.updateItems(items)
     }
 
     private fun addItemsIfNeed(nextItemPosition: Int) {
         if (sexPositionsCardsAdapter?.itemsList?.size.orZero() < nextItemPosition + 2) {
-            sexPositionsCardsAdapter?.itemsList?.addAll(sexPositionsCardsAdapter?.itemsList.orEmpty())
-            sexPositionsCardsAdapter?.notifyDataSetChanged()
+            sexPositionsCardsAdapter?.updateItems(sexPositionsCardsAdapter?.itemsList.orEmpty())
         }
     }
 
     private fun setupListeners() {
         binding.btnStart.setOnClickWithTouchImpact {
-            val currentPosition =
-                (binding.rvItems.layoutManager as LinearLayoutManager).findLastVisibleItemPosition()
-            var nextItem = currentPosition + 20
-            addItemsIfNeed(nextItem)
-            while (sexPositionsCardsAdapter?.itemsList?.get(nextItem)?.isLocked.orFalse()) {
-                nextItem++
-                addItemsIfNeed(nextItem)
-            }
-            binding.rvItems.smoothScrollBy(
-                requireActivity().screenSize().width * (nextItem - currentPosition),
-                0,
-                DecelerateInterpolator(),
-                5000
-            )
+            onStartClick()
         }
-
         binding.ivFullPack.setOnClickWithTouchImpact {
             showPurchaseDialog()
         }
+    }
+
+    private fun onStartClick(){
+        val currentPosition =
+            (binding.rvItems.layoutManager as LinearLayoutManager).findLastVisibleItemPosition()
+        var nextItem = currentPosition + 20
+        addItemsIfNeed(nextItem)
+        while (!sexPositionsCardsAdapter?.itemsList?.get(nextItem)?.isLocked.orFalse()) {
+            nextItem++
+            addItemsIfNeed(nextItem)
+        }
+        binding.rvItems.smoothScrollBy(
+            (262.dpToPx() * (nextItem - currentPosition)),
+            0,
+            DecelerateInterpolator(),
+            6000
+        )
     }
 
     private fun showPurchaseDialog() {
