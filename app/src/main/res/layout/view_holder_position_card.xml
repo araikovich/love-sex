@@ -7,7 +7,7 @@
         android:layout_width="262dp"
         android:layout_height="469dp">
 
-        <androidx.appcompat.widget.AppCompatImageView
+        <araikovich.inc.percent_views.view.PImageView
             android:id="@+id/iv_position"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

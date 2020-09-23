@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="p_width" format="float" />
+    <attr name="p_widthLong" format="float" />
+    <attr name="p_height" format="float" />
+    <attr name="p_heightLong" format="float" />
+    <attr name="p_marginTop" format="float" />
+    <attr name="p_marginTopLong" format="float" />
+    <attr name="p_marginBottom" format="float" />
+    <attr name="p_marginBottomLong" format="float" />
+    <attr name="p_marginStart" format="float" />
+    <attr name="p_marginEnd" format="float" />
+    <attr name="p_minWidth" format="float" />
+    <attr name="p_paddingTop" format="float" />
+    <attr name="p_paddingTopLong" format="float" />
+    <attr name="p_paddingBottom" format="float" />
+    <attr name="p_paddingBottomLong" format="float"/>
+    <attr name="p_paddingStart" format="float" />
+    <attr name="p_paddingEnd" format="float" />
+    <attr name="p_padding" format="float" />
+    <attr name="p_textSize" format="float" />
+    <attr name="p_textSizeLong" format="float" />
+    <attr name="p_minTextSize" format="float"/>
+    <attr name="p_minTextSizeLong" format="float"/>
+
+    <declare-styleable name="PPercentSizes">
+        <attr name="p_width" />
+        <attr name="p_widthLong" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_textSize" />
+        <attr name="p_textSizeLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+        <attr name="p_padding" />
+        <attr name="p_paddingTop" />
+        <attr name="p_paddingTopLong" />
+        <attr name="p_paddingBottom" />
+        <attr name="p_paddingBottomLong" />
+        <attr name="p_paddingStart" />
+        <attr name="p_paddingEnd" />
+    </declare-styleable>
+
+    <declare-styleable name="PAutoFitTextView">
+        <attr name="p_width" />
+        <attr name="p_widthLong" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_minTextSize" />
+        <attr name="p_minTextSizeLong" />
+        <attr name="p_textSize" />
+        <attr name="p_textSizeLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+    </declare-styleable>
+
+    <declare-styleable name="PConstraintLayout">
+        <attr name="p_width" />
+        <attr name="p_widthLong" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+    </declare-styleable>
+
+    <declare-styleable name="PView">
+        <attr name="p_width" />
+        <attr name="p_widthLong" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+    </declare-styleable>
+
+    <declare-styleable name="PTextView">
+        <attr name="p_width" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_textSize" />
+        <attr name="p_textSizeLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+    </declare-styleable>
+
+    <declare-styleable name="PImageView">
+        <attr name="p_width" />
+        <attr name="p_widthLong" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+    </declare-styleable>
+
+    <declare-styleable name="PCircleProgressView">
+        <attr name="p_width" />
+        <attr name="p_widthLong" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+    </declare-styleable>
+    <declare-styleable name="PButtonWithImage">
+        <attr name="pButtonWithImage_imagePosition">
+            <flag name="start" value="1" />
+            <flag name="end" value="1" />
+        </attr>
+        <attr name="pButtonWithImage_imageMargin" format="float" />
+        <attr name="pButtonWithImage_imageSize" format="float" />
+        <attr name="pButtonWithImage_drawable" format="reference" />
+        <attr name="pButtonWithImage_font" format="string" />
+        <attr name="pButtonWithImage_text_color" format="reference" />
+        <attr name="pButtonWithImage_textSize" format="float" />
+        <attr name="pButtonWithImage_textSizeLong" format="float" />
+        <attr name="pButtonWithImage_textAllCaps" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="PUSeekBar">
+        <attr name="p_width" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+    </declare-styleable>
+    <declare-styleable name="PUMaterialButton">
+        <attr name="p_width" />
+        <attr name="p_widthLong" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_textSize" />
+        <attr name="p_textSizeLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+        <attr name="p_minWidth" />
+        <attr name="disabled_color" format="reference" />
+        <attr name="enabled_color" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="PSquareImageView">
+        <attr name="p_width" />
+        <attr name="p_widthLong" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+    </declare-styleable>
+    <declare-styleable name="PSquareLottieView">
+        <attr name="p_width" />
+        <attr name="p_widthLong" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+    </declare-styleable>
+    <declare-styleable name="PLottieView">
+        <attr name="p_width" />
+        <attr name="p_widthLong" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+    </declare-styleable>
+    <declare-styleable name="PViewPager">
+        <attr name="p_width" />
+        <attr name="p_widthLong" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+    </declare-styleable>
+    <declare-styleable name="PAppBarLayout">
+        <attr name="p_width" />
+        <attr name="p_widthLong" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+    </declare-styleable>
+    <declare-styleable name="PHorizontalScrollView">
+        <attr name="p_width" />
+        <attr name="p_widthLong" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+    </declare-styleable>
+    <declare-styleable name="PSwipeRefreshLayout">
+        <attr name="p_width" />
+        <attr name="p_widthLong" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+    </declare-styleable>
+    <declare-styleable name="PFrameLayout">
+        <attr name="p_width" />
+        <attr name="p_widthLong" />
+        <attr name="p_height" />
+        <attr name="p_heightLong" />
+        <attr name="p_marginTop" />
+        <attr name="p_marginTopLong" />
+        <attr name="p_marginBottom" />
+        <attr name="p_marginBottomLong" />
+        <attr name="p_marginStart" />
+        <attr name="p_marginEnd" />
+    </declare-styleable>
+</resources>
