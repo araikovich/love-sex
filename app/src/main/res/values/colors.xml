@@ -4,11 +4,14 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
-    <color name="main_top_color">#8f1521</color>
-    <color name="main_bottom_color">#fb192f</color>
+    <color name="main_top_color">#6d0516</color>
+    <color name="main_bottom_color">#48000b</color>
     <color name="premium_gradient_start_color">#a9183e</color>
     <color name="premium_gradient_end_color">#700a1d</color>
     <color name="default_color">#700a1d</color>
     <color name="color_transparent">#00000000</color>
     <color name="white">#ffffff</color>
+    <color name="item_default_top_color">#84050a</color>
+    <color name="item_default_bottom_color">#b20605</color>
+    <color name="locked_color">#780E0E</color>
 </resources>
