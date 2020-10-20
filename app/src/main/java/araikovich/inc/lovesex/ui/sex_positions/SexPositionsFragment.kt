@@ -121,7 +121,7 @@ class SexPositionsFragment : Fragment() {
             addItemsIfNeed(nextItem)
         }
         binding.rvItems.smoothScrollBy(
-            (262.dpToPx() * (nextItem - currentPosition)),
+            (300.dpToPx() * (nextItem - currentPosition)),
             0,
             DecelerateInterpolator(),
             6000

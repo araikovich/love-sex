@@ -1,3 +1,2 @@
-include ':percent_views'
 include ':app'
 rootProject.name = "Love Sex"

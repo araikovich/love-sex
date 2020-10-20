@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.constraintlayout.widget.ConstraintSet
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import araikovich.inc.lovesex.R
@@ -53,5 +54,9 @@ class PositionViewHolder(view: View) : RecyclerView.ViewHolder(view) {
                 model.imageSrc
             }
         )
+        if (!model.isLocked) {
+            binding.tvTitle.text = model.title
+            binding.tvLevel.text = model.levelTitle
+        }
     }
 }

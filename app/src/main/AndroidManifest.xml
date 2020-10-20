@@ -13,6 +13,7 @@
         android:roundIcon="@drawable/love_sex_app_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.sex_position_detail.SexPositionDetailActivity"></activity>
         <activity
             android:name=".ui.splash_screen.SplashScreenActivity"
             android:screenOrientation="portrait"

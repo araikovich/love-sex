@@ -21,8 +21,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_items"
             android:layout_width="match_parent"
-            android:layout_height="469dp"
-            android:layout_marginTop="106dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="90dp"
             android:clipToPadding="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -30,14 +30,15 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_start"
-            android:layout_width="264dp"
-            android:layout_height="50dp"
+            android:layout_width="310dp"
+            android:layout_height="60dp"
             android:layout_marginBottom="60dp"
             android:background="@drawable/btn_start_scroll_sex_positions_background"
             android:fontFamily="@font/roboto_medium"
             android:text="@string/btn_sex_positions_start"
             android:textColor="@color/white"
             android:textSize="20dp"
+            android:elevation="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
