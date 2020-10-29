@@ -114,3 +114,15 @@ fun <T : Any> argument(): ReadWriteProperty<Fragment, T> =
 
 fun <T : Any> argumentNullable(): ReadWriteProperty<Fragment, T?> =
     FragmentNullableArgumentDelegate()
+
+fun View.show() {
+    if (visibility != View.VISIBLE) {
+        visibility = View.VISIBLE
+    }
+}
+
+fun View.hide() {
+    if (visibility != View.GONE) {
+        visibility = View.GONE
+    }
+}

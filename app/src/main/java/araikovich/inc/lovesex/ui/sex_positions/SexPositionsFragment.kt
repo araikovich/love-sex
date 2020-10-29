@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import araikovich.inc.lovesex.R
 import araikovich.inc.lovesex.databinding.FragmentHomeBinding
+import araikovich.inc.lovesex.ui.sex_position_detail.SexPositionDetailActivity
 import araikovich.inc.lovesex.ui.sex_positions.dialog.AdsSexPositionDialog
 import araikovich.inc.lovesex.ui.sex_positions.dialog.PurchaseSexPositionsPackDialog
 import araikovich.inc.lovesex.ui.sex_positions.model.SexPositionsCardModel
@@ -111,21 +112,18 @@ class SexPositionsFragment : Fragment() {
         }
     }
 
-    private fun onStartClick(){
-        val currentPosition =
-            (binding.rvItems.layoutManager as LinearLayoutManager).findLastVisibleItemPosition()
-        var nextItem = currentPosition + 20
-        addItemsIfNeed(nextItem)
-        while (!sexPositionsCardsAdapter?.itemsList?.get(nextItem)?.isLocked.orFalse()) {
-            nextItem++
-            addItemsIfNeed(nextItem)
+    private fun onStartClick() {
+        if (sexPositionsCardsAdapter?.itemsList?.lastIndex.orZero() >= (binding.rvItems.layoutManager as LinearLayoutManager).findLastVisibleItemPosition()) {
+            val currentPos =
+                sexPositionsCardsAdapter?.itemsList?.get((binding.rvItems.layoutManager as LinearLayoutManager).findLastVisibleItemPosition() - 1)
+            currentPos?.also { pos ->
+                if (pos.isLocked) {
+                    showPurchaseDialog()
+                } else {
+                    SexPositionDetailActivity.start(requireActivity(), pos)
+                }
+            }
         }
-        binding.rvItems.smoothScrollBy(
-            (300.dpToPx() * (nextItem - currentPosition)),
-            0,
-            DecelerateInterpolator(),
-            6000
-        )
     }
 
     private fun showPurchaseDialog() {

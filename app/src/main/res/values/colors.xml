@@ -14,4 +14,6 @@
     <color name="item_default_top_color">#84050a</color>
     <color name="item_default_bottom_color">#b20605</color>
     <color name="locked_color">#780E0E</color>
+    <color name="white40">#66FFFFFF</color>
+    <color name="notification_text_color">#53252c</color>
 </resources>

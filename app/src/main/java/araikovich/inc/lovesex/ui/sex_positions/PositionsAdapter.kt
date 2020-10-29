@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import araikovich.inc.lovesex.R
 import araikovich.inc.lovesex.databinding.ViewHolderPositionCardBinding
 import araikovich.inc.lovesex.ui.sex_positions.model.SexPositionsCardModel
+import araikovich.inc.lovesex.ui.utils.hide
+import araikovich.inc.lovesex.ui.utils.show
 
 class PositionsAdapter(private val context: Context) : RecyclerView.Adapter<PositionViewHolder>() {
 
@@ -55,8 +57,13 @@ class PositionViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             }
         )
         if (!model.isLocked) {
-            binding.tvTitle.text = model.title
-            binding.tvLevel.text = model.levelTitle
+            binding.tvTitle.show()
+            binding.tvLevel.show()
+            binding.tvTitle.setText(model.titleRes)
+            binding.tvLevel.setText(model.levelTitleRes)
+        } else {
+            binding.tvTitle.hide()
+            binding.tvLevel.hide()
         }
     }
 }
